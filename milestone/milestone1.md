@@ -1,13 +1,3 @@
-# Project of Data Visualization (COM-480)
-
-| Student's name | SCIPER |
-| -------------- | ------ |
-| JacopoFerro | 299301 |
-| Mark Mouawad | 296508 |
-| Marcel Mauricio Moran Calderon | 344012 |
-
-[Milestone 1](/milestone/milestone1.md) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
-
 ## Milestone 1 (7th of April, 5pm)
 
 **10% of the final grade**
@@ -93,13 +83,12 @@ With this data, we can try to answer to the following questions:
 
 Below are some examples of visualizations we have found relevant.
 
-<img src="./images/plot4.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot5.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot6.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot1.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot2.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot3.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot8.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot4.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot5.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot6.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot1.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot2.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot3.png" alt="alt text" width="50%" height="50%" />
 
 
 
