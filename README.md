@@ -91,6 +91,7 @@ With this data, we can try to answer to the following questions:
 
 ## Exploratory Data Analysis
 Analysis and exploration of dataset can be found in the [notebooks/Analysis.ipynb](./notebooks/Analysis.ipynb)
+
 Below are some examples of visualizations we have found relevant.
 
 <img src="./images/plot4.png" alt="alt text" width="50%" height="50%" />
