@@ -89,6 +89,7 @@ Below are some examples of visualizations we have found relevant.
 <img src="../images/plot1.png" alt="alt text" width="50%" height="50%" />
 <img src="../images/plot2.png" alt="alt text" width="50%" height="50%" />
 <img src="../images/plot3.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot7.png" alt="alt text" width="50%" height="50%" />
 
 
 
