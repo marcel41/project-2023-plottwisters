@@ -20,74 +20,79 @@ Please, fill the following sections about your project.
 ### Dataset
 We have decided to use our own [personal data](https://support.spotify.com/us/article/data-rights-and-privacy-settings/) (which is available under the GDPR data rights) from Spotify and mix with other API sources, such as [Spotfiy API](https://developer.spotify.com/documentation/web-api) and [Spotipy](https://spotipy.readthedocs.io/en/2.22.1/).
 
-We have first downloaded a copy of our Streaming History. The file is  around 500 kb of size, with more than 3000 records of playing history. It contains records with the following structure:
+Every user can download their own data from Spotify, which contains several datasets. The main data that we explored here is the Streaming History, which containts a list of tracks they have listened to, with the date and time of the listening session, the duration of the session in milliseconds and the name of the artist. Users will also see more specific files about their account and payements which will not be relevant for our project. The other datasets that might become relevant in the future are Playlist datasets, Search Queries and YourLibrary datasets. In this first analysis we will focus on the Streaming History dataset which is the most relevant for our project, but we did explore the other datasets as well and might use them to cross reference our data in combination with external APIs.
 
+We downloaded our own data from Spotify which allows 3 different types of downloads. We had to wait to receive the data of the last year and at the moment of writing we are waiting for the full data of the account (one of our team members has been using Spotify for 10 years). We will use the data of the last year to start our analysis and notebooks and present our project, then we will use the full data once we receive it (it can take up to 30 days and will contain more datasets as well).
 
+The following presentation and analysis is thus based mainly on the Streaming History dataset(s) of the past year of one of our team members. The dataset contains 10000 records from March 2022 to early January 2023 and 3300+ records from January 2023 to March 2023. The files are respectively 1.4MB and 0.5MB in size (uncompressed, in JSON format). 
+
+Each record contains the following information:
+```json
 
 	{
 
-	"endTime": date,
+		"endTime": date,
 
-	"artistName":  string,
+		"artistName":  string,
 
-	"trackName": string,
+		"trackName": string,
 
-	"msPlayed": string
+		"msPlayed": string
 
-}
+	}
+```
 
-	,
 
-	With this information we were able to query the Spotify web API to get the album release date, its popularity following Spotify's criteria, its associated genres and the track's duration.  
+With this information we were able to query the Spotify web API to get the album release date, its popularity following Spotify's criteria, its associated genres and the track's duration.  
 
 In addition, we are using spotify's API audio features route. It returns a list of audio features for every track.  
 
+```json
+
 	{
 
-	"danceability": number,
+		"danceability": number,
 
-	"energy":  number,
+		"energy":  number,
 
-	"key": number,
+		"key": number,
 
-	"loudness": number,
+		"loudness": number,
 
-	"acousticness": number,
+		"acousticness": number,
 
-	"intrumentalness" : number,
+		"intrumentalness" : number,
 
-	"livenes": number,
+		"liveness": number,
 
-	"valence": number,
+		"valence": number,
 
-	"tempo": number
+		"tempo": number
 
-}
-
-Finally, we may gather the music lyrics together with musixmatch api for example. However it is limited to 30% of the track.
+	}
+```
 
 
 ## Problematic
+Big Tech companies have a lot of data about their users. They are able to use this data to provide personalized services and to target their users with ads. Some companies are more transparent about the data they collect and how they use it, and in general European laws are more strict about data privacy and protection and require companies to allow users to access their data. 
 
-We are looking to deliver some personal and original insights about your music consumption. We have temporal data such as the date the track has been played and for how long, coupled with track information and its audio features such as danceability, valence and loudness.
+Instead of doing a project about aggregated data, we want to focus on the individual user and their data. Public data is often extremely interesting, it can show trends and patterns that are not visible when looking at the data of a single user. However, we think that the data of a single user can be even more interesting and it's actully at the core of revenue generation for big tech companies. 
 
-We think this might be a relevant platform to be released online, so a user may download its own data from spotify, upload it and get an analysis for a reduced part of it. (For example 150 most listened songs?)
+We went on a quest to find a way to access our own data from platforms that we use every day, platforms in which we play more active or passive roles. We requested our data from Facebook, Instagram, Google, Spotify, Tinder and Apple. We were shocked by the results.
 
-We are targeting every music listener that uses Spotify regularly and are interested in knowing more about their own music listening behavior.
+Discussing the details of each platform is out of the scope of this project, but we can say that we were fully convinced that we should pursue this approach and vision for our visualization. We decided that our project won't be focused on fear mongering or on the negative aspects of data collection, but rather on how it can be used to provide personalized insights about our own data and how the data itself really looks like in 'raw', which is also an interesting engineering challenge.
 
-With this data, we can try to answer to the following questions:
+Combining the above considerations, we decided to focus on Spotify. We are interested in the data that Spotify collects about its users and how it can be used to provide personalized insights about their music consumption. Spotify was relatively slow in providing the data, but its quite organized, documented, and easy to understand for a non-technical user. Furthermore it's rich and detailed (we were surprised by the granularity), but not so much that it can't be easily processed and analyzed (100GB from Google, 6GB form Instagram etc...), it's also more broadly used and somewhat less stigmatized or controversial than other platforms (Twitter, Facebook, Tinder etc...).
 
+We want to provide a tool and a guide to the single user (tech savvy or not) to get comfortable with the entire process, and answer the following questions specific to their own data:
 
+- How do the periods of the year influence your music taste?
+- What music do you listen to more on weekends compared to weekdays?
+- What is your expected sentiment of the day or week by listening to these tracks?
+- How did your music taste evolve over time?
+- How much time do you spend listening to music? To which artists? To which genres? To podcasts?
 
-
-    How do the periods of the year influence your music tastes?
-
-
-    What music do you listen to more on weekends compared to weekdays?
-
-
-    What is your expected sentiment of the day or week by listening to these tracks?
-
+We will make sure to provide a complete analysis with static data using our own (or a mix of our own data of the team members), and we will also provide a way to upload your own data and get personalized insights. This will bring several challenges on design, visualization, and engineering/development/computation, we are excited to tackle them.
 
 ## Exploratory Data Analysis
 Analysis and exploration of dataset can be found in the [notebooks/Analysis.ipynb](./notebooks/Analysis.ipynb)
@@ -102,6 +107,8 @@ name, will show similar artists for example.
 *Your most played artists/podcasts*
 
 <img src="./images/plot5.png" alt="alt text" width="50%" height="50%" />
+<img src="./images/plot8.png" alt="alt text" width="50%" height="50%" />
+
 
 **2. Pie Charts visualization**
 - Highlights the difference in propotion for listening times. It may show
@@ -131,7 +138,7 @@ and also charting together multiple ones.
 <img src="./images/plot2.png" alt="alt text" width="50%" height="50%" />
 
 
-## 4-Related Work
+## Related Work
 
 We think the originality of our approach is to actually leverage the fact that companies have legal obligations to deliver to a user their data usage in order to show personal insights.  
 
