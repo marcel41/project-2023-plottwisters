@@ -31,11 +31,11 @@ Each record contains the following information:
 
 	{
 
-		"endTime": date,
+		"endTime": date
 
-		"artistName":  string,
+		"artistName":  string
 
-		"trackName": string,
+		"trackName": string
 
 		"msPlayed": string
 
@@ -51,21 +51,21 @@ In addition, we are using spotify's API audio features route. It returns a list 
 
 	{
 
-		"danceability": number,
+		"danceability": number
 
-		"energy":  number,
+		"energy":  number
 
-		"key": number,
+		"key": number
 
-		"loudness": number,
+		"loudness": number
 
-		"acousticness": number,
+		"acousticness": number
 
-		"intrumentalness" : number,
+		"intrumentalness" : number
 
-		"liveness": number,
+		"liveness": number
 
-		"valence": number,
+		"valence": number
 
 		"tempo": number
 
