@@ -31,11 +31,11 @@ Each record contains the following information:
 
 	{
 
-		"endTime": date,
+		"endTime": date
 
-		"artistName":  string,
+		"artistName":  string
 
-		"trackName": string,
+		"trackName": string
 
 		"msPlayed": string
 
@@ -51,21 +51,21 @@ In addition, we are using spotify's API audio features route. It returns a list 
 
 	{
 
-		"danceability": number,
+		"danceability": number
 
-		"energy":  number,
+		"energy":  number
 
-		"key": number,
+		"key": number
 
-		"loudness": number,
+		"loudness": number
 
-		"acousticness": number,
+		"acousticness": number
 
-		"intrumentalness" : number,
+		"intrumentalness" : number
 
-		"liveness": number,
+		"liveness": number
 
-		"valence": number,
+		"valence": number
 
 		"tempo": number
 
@@ -126,7 +126,7 @@ from the streaming history as our date time. It brings out the differences throu
 -  We can plot a single feature as in the first chart below, or multiple ones together.
 
 <img src="../images/plot3.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/plot7.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/plot7.png" alt="alt text" width="50%" height="50%" />
 
 **4. Radar/spider charts**
 - Particularly suited for example showing relevant metrics comparing average over weekdays, 
