@@ -9,7 +9,7 @@ __pycache__/
 .cache
 
 # Other
-secrets-txt
+secrets.txt
 
 
 # Data
