@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "deploy" : "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
@@ -46,7 +46,10 @@
     "node": ">=16.12.0"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001482",
+    "css-tree": "^2.3.1",
     "d3": "7.8.4",
+    "prismjs": "^1.29.0",
     "tailwind-gradients": "^1.0.0"
   }
 }
