@@ -1,0 +1,35 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+
+<Layout {meta}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    callToAction={{ text: 'Upload file', icon: 'tabler:download' }}
+    callToAction2={{ text: 'About', href: '#features' }}
+    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+  >
+    <Fragment slot="title">
+        Spotify twister
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">SpotifyTwister</span> is a research tool built by EPFL students 
+        to learn more about how is your data being used by Spotify .
+        </span
+      >
+    </Fragment>
+  </Hero>
+
+
+</Layout>
