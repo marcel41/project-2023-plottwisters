@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "deploy" : "gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
@@ -30,6 +31,7 @@
     "eslint": "^8.39.0",
     "eslint-plugin-astro": "^0.26.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
+    "gh-pages": "5.0.0",
     "limax": "2.1.0",
     "mdast-util-to-string": "^3.2.0",
     "prettier": "^2.8.8",
@@ -44,6 +46,7 @@
     "node": ">=16.12.0"
   },
   "dependencies": {
+    "d3": "7.8.4",
     "tailwind-gradients": "^1.0.0"
   }
 }
