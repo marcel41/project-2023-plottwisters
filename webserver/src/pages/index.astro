@@ -2,6 +2,7 @@
 import { SITE } from '~/config.mjs';
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import BarChartRace from '~/components/BarChartRace.astro';
 
 const meta = {
   title: SITE.title,
@@ -30,12 +31,17 @@ const meta = {
       >
     </Fragment>
   </Hero>
+
   
   <div class="flex items-center justify-center flex-col">
+    <BarChartRace> </BarChartRace>
+
     <img src={'energy.jpg'}  height="600" width="600" title="Iframe Example"></iframe> 
     <img src={'valence.jpg'}  height="600" width="600" title="Iframe Example"></iframe> 
     <img src={'cloudwords.jpg'}  height="450" width="450" title="Iframe Example"></img> 
   </div>
 
 
+
 </Layout>
+
