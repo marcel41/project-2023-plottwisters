@@ -8,6 +8,7 @@ const meta = {
   description: SITE.description,
   dontUseTitleTemplate: true,
 };
+
 ---
 
 <Layout {meta}>
@@ -18,7 +19,7 @@ const meta = {
     callToAction2={{ text: 'About', href: '#features' }}
   >
     <Fragment slot="title">
-        Spotify twister
+        Spotify twisters
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -29,10 +30,12 @@ const meta = {
       >
     </Fragment>
   </Hero>
+  
   <div class="flex items-center justify-center">
     <iframe src={'spider.html'}  height="600" width="800" title="Iframe Example"></iframe> 
 
   </div>
+  <div></div>
 
 
 </Layout>
