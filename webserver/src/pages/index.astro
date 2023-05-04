@@ -16,7 +16,6 @@ const meta = {
   <Hero
     callToAction={{ text: 'Upload file', icon: 'tabler:download' }}
     callToAction2={{ text: 'About', href: '#features' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
         Spotify twister
@@ -25,11 +24,15 @@ const meta = {
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
         <span class="font-semibold">SpotifyTwister</span> is a research tool built by EPFL students 
-        to learn more about how is your data being used by Spotify .
+        to learn more about how is your personal data being used by Spotify.
         </span
       >
     </Fragment>
   </Hero>
+  <div class="flex items-center justify-center">
+    <iframe src={'spider.html'}  height="600" width="800" title="Iframe Example"></iframe> 
+
+  </div>
 
 
 </Layout>
