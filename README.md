@@ -6,7 +6,7 @@
 | Mark Mouawad | 296508 |
 | Marcel Mauricio Moran Calderon | 344012 |
 
-[Milestone 1](/milestone/milestone1.md) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
+[Milestone 1](/milestone/milestone1.md) • [Milestone 2](/milestone/milestone2.md) • [Milestone 3](#milestone-3)
 
 ## Milestone 1 (7th of April, 5pm)
 
