@@ -16,6 +16,7 @@ Website code located under webserver in webserver branch of this repo: [here](ht
 **Functional project prototype review:** [here](https://64548019311497495ec4537c--remarkable-lollipop-a7497e.netlify.app/)
 
 **Report**
+
 The goal of our website is to develop visualizations that can provide insights to the users. Therefore, our visualization will be generated at run time by the user uploading Spotify data, augmented through APIs to obtain audio features as discussed in milestone#1. Inside the website, we will be providing the following visualizations. 
 
 ## 1 Spider visualization of audio features
