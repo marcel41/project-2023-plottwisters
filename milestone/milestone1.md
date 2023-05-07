@@ -106,8 +106,8 @@ name, will show similar artists for example.
 
 *Your most played artists/podcasts*
 
-<img src="./images/milestone1Img/plot5.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/milestone1Img/plot8.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot5.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot8.png" alt="alt text" width="50%" height="50%" />
 
 
 **2. Pie Charts visualization**
@@ -117,16 +117,16 @@ in your listening times.
 
 *The proportion of time spent listening to your top 20 artists/tracks*
 
-<img src="./images/milestone1Img/plot4.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/milestone1Img/plot6.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot4.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot6.png" alt="alt text" width="50%" height="50%" />
 
 **3. Line charts**
 - Line charts are useful for plotting time series data. In this case, we use the "endTime" property
 from the streaming history as our date time. It brings out the differences through periods of time (a year for ex)
 -  We can plot a single feature as in the first chart below, or multiple ones together.
 
-<img src="./images/milestone1Img/plot3.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/milestone1Img/plot7.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot3.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot7.png" alt="alt text" width="50%" height="50%" />
 
 **4. Radar/spider charts**
 - Particularly suited for example showing relevant metrics comparing average over weekdays, 
@@ -134,8 +134,8 @@ times of the days, months of the year or years.
 -  We might use them for each one of the audio features, 
 and also charting together multiple ones.
 
-<img src="./images/milestone1Img/plot1.png" alt="alt text" width="50%" height="50%" />
-<img src="./images/milestone1Img/plot2.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot1.png" alt="alt text" width="50%" height="50%" />
+<img src="../images/milestone1Img/plot2.png" alt="alt text" width="50%" height="50%" />
 
 
 ## Related Work
