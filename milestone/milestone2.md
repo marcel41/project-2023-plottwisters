@@ -5,11 +5,14 @@
 
 Two A4 pages describing the project goal: [here](Plottwistters.pdf)
 
+Website code located under webserver in webserver branch of this repo: [here](https://github.com/com-480-data-visualization/project-2023-plottwisters/tree/webserver/webserver)
+
 Functional project prototype review: [here](https://64548019311497495ec4537c--remarkable-lollipop-a7497e.netlify.app/)
 
 The goal of our website is to develop visualizations that can provide insights to the users. Therefore, our visualization will be generated at run time by the user uploading Spotify data, augmented through APIs to obtain audio features as discussed in milestone#1. Inside the website, we will be providing the following visualizations. 
 
 ## 1 Spider visualization of audio features
+![alt text](milestone2Img/1.PNG)
 
 **Description:** Visualization of danceability, energy and other factors through each day, month, and year of the songs that the user has played.
 
@@ -23,6 +26,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 2 Map frequency of played tracks
+![alt text](milestone2Img/2.PNG)
 
 **Description:** Show listening times on a world map displaying frequency in bubbles.
 
@@ -36,6 +40,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 3 Wordcloud artists/tracks
+![alt text](milestone2Img/3.PNG)
 
 **Description:** Wordcloud of most listened tracks and artists.
 
@@ -49,6 +54,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 4 Most played tracks/artists 
+![alt text](milestone2Img/4.PNG)
 
 **MVP:** It will use a fixed window of time.
 
@@ -62,6 +68,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 5 Graph tracks relations
+![alt text](milestone2Img/5.PNG)
 
 **Description:** Explore the most frequent user's selection of music after listening to certain music. For instance: The user listens to Do for love -> Never gonna give you up-> Alone.
 
@@ -75,6 +82,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 6 Horizontal bar chart animated with time
+![alt text](milestone2Img/6.PNG)
 
 **Description:** Show time spent on the most listened tracks and animate its sizes and positions in the rank as time goes by. For instance: https://observablehq.com/@mbostock/most-popular-programming-languages-2004-2021.
 
@@ -88,6 +96,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 7 State of mind
+![alt text](milestone2Img/7.PNG)
 
 **Description:** Plot your emotional/mind state (sad, party, focus, introspective, etc.) on a map, where each color represents a mental state.
 
@@ -101,6 +110,7 @@ The goal of our website is to develop visualizations that can provide insights t
 
 
 ## 8 Genres played through time
+![alt text](milestone2Img/8.PNG)
 
 **Description:** This visualization will be similar to a bubble chart with only an X-axis indicating the time (months). Each bubble represents a genre listened to, and its radius is determined by the time played in milliseconds.
 
@@ -111,10 +121,3 @@ The goal of our website is to develop visualizations that can provide insights t
 **How to achieve:** Aggregate the information of genre-based of Spotify data along with time_ms, and plot these results with the help of d3js.
 
 **Lectures:** N/A.
-
-
-
-
-
-
-
