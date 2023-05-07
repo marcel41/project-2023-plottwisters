@@ -11,12 +11,11 @@
 ## Milestone 2 (5th of May, 5pm)
 **10% of the final grade**
 
-Two A4 pages describing the project goal: [here](Plottwistters.pdf)
-
 Website code located under webserver in webserver branch of this repo: [here](https://github.com/com-480-data-visualization/project-2023-plottwisters/tree/webserver/webserver)
 
-Functional project prototype review: [here](https://64548019311497495ec4537c--remarkable-lollipop-a7497e.netlify.app/)
+**Functional project prototype review:** [here](https://64548019311497495ec4537c--remarkable-lollipop-a7497e.netlify.app/)
 
+**Report**
 The goal of our website is to develop visualizations that can provide insights to the users. Therefore, our visualization will be generated at run time by the user uploading Spotify data, augmented through APIs to obtain audio features as discussed in milestone#1. Inside the website, we will be providing the following visualizations. 
 
 ## 1 Spider visualization of audio features
